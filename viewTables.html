@@ -1,63 +1,67 @@
 <!DOCTYPE html>
 <!-- saved from url=(0042)http://hot-restaurant.herokuapp.com/tables -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	
-	<title>Tables Page</title>
+  <title>Tables Page</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-	<!-- Latest compiled and minified CSS & JS -->
-	<link rel="stylesheet" href="./viewTables_files/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="./viewTables_files/jquery.js.download"></script>
-	<script src="./viewTables_files/bootstrap.min.js.download" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+  <!-- <script src="./viewTables_files/jquery.js.download"></script>
+  <script src="./viewTables_files/bootstrap.min.js.download" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
 </head>
+
 <body>
+  <div class="container">
+	<div class="jumbotron">
+	  <h1 class="text-center">Hot Restaurant</h1>
+	  <hr>
+	  <h2 class="text-center">Current Reservations and Waiting List</h2>
+	  <br>
 
-	<div class="container">
+	  <div class="text-center">
+		<a href="makeReservation.html"><button type="button" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
 
-		<div class="jumbotron">
-			<h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Hot Restaurant</h1>
-			<hr>
-			<h2 class="text-center">Current Reservations and Waiting List</h2>
-			<br>
-
-			<div class="text-center">
-				<a href="http://hot-restaurant.herokuapp.com/reserve"><button type="button" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
-				<a href="http://hot-restaurant.herokuapp.com/"><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-lg-12">
-
-				<!-- Current Tables in Use -->
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">Current Reservations</h4>
-					</div>
-					<div class="panel-body" id="tableSection">
-					<div class="well" id="tableWell-01"><h2><span class="label label-primary">1</span> | us</h2></div></div>
-				</div>
-
-				<!-- Waiting List Panel -->
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">Waiting List</h4>
-					</div>
-					<div class="panel-body" id="waitlistSection">
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-	    <footer class="footer">
-	      <div class="container">
-	      	<p>Control Panel</p>
-	        <p><a href="http://hot-restaurant.herokuapp.com/tables#" id="clear">Clear Table</a> | <a href="http://hot-restaurant.herokuapp.com/api/tables">API Table Link</a> | <a href="http://hot-restaurant.herokuapp.com/api/waitlist">API Wait List</a></p>
-	      </div>
-	    </footer>
-
+		<a href="index.html"><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
+	  </div>
 	</div>
+
+	<div class="row">
+	  <div class="col-lg-12">
+
+	    <!-- Current Reservations Panel -->
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+			<h4 class="panel-title">Current Reservations</h4>
+		  </div>
+		  
+		  <!-- Insert "current reservations" panel javascript id -->
+		  <div class="panel-body" id="">
+		  	<div></div>
+		  </div>
+		</div>
+
+		<!-- Waiting List Panel -->
+		<div class="panel panel-default">
+		  <div class="panel-heading">
+			<h4 class="panel-title">Waiting List</h4>
+		  </div>
+			
+		  <!-- Insert "waiting list" panel javascript id -->
+		  <div class="panel-body" id=""></div>
+		</div>
+	  </div>
+	</div>
+
+	  <footer class="footer">
+	    <div class="container">
+		  <p>*Enter Footer Note here*</p>
+	      <p>Valerie, Katheryn, Joe, Andy</p>
+	    </div>
+	  </footer>
+
+  </div>
 
 
 
